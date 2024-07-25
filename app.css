@@ -1,0 +1,263 @@
+html, body {
+  background: #EEE;
+  overflow: hidden;
+  color: white;
+}
+
+svg {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.navbar {
+  background-color: #4b8fb8 !important;
+}
+
+.navbar .navbar-nav a,
+.navbar .navbar-header span {
+  font-weight: 500 !important;
+  color: white !important;
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 36px;
+  margin-right: 8px;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+}
+
+.nopadding {
+   padding: 0 !important;
+}
+
+.nomargin {
+   margin: 0 !important;
+}
+
+.ab-tree {
+  position: fixed;
+}
+
+.info {
+  z-index: 10;
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+  font-size: 9px;
+}
+
+.prune-info {
+  z-index: 10;
+  color:black;
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  font-size: 14px;
+}
+
+.ctrl-panel {
+  z-index: 10;
+  position: relative;
+  float: right;
+  width: 325px;
+  padding: 10px;
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.ctrl-panel .btn {
+  font-size: 12px;
+}
+
+.ctrl-panel hr {
+  margin: 10px;
+  height: 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.ctrl-panel .row {
+  margin: 5px 0;
+}
+
+.ctrl-panel .row > div {
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.ctrl-panel .row .progress {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.ctrl-panel .row .slider-handle {
+  background-color: #428BCA;
+  background-image: none;
+  opacity: 1;
+}
+
+.button-label-container {
+  padding: 7px 0 0 0;
+  margin: 0;
+}
+
+.btn-container {
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  margin: 5px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  outline: none;
+  width: 12rem;
+}
+
+.btn-container:hover {
+  border-color: #4b8fb8;
+  background-color: #f0f8ff;
+}
+
+.btn-container:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-container:active {
+  outline: none;
+  box-shadow: none;
+  background-color: #e6f3ff;
+}
+
+.btn-container:disabled {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.button-label {
+  padding: 0 3px;
+  font-weight: 400 !important;
+  color: black !important;
+}
+
+.slider-label.left {
+  padding: 0 10px 0 0;
+}
+
+.slider-label.right {
+  padding: 0 0 0 10px;
+}
+
+.answer-true {
+  color: #008800;
+}
+
+path.link {
+  fill: none;
+  stroke: #000;
+  stroke-width: 4px;
+}
+
+path.link.entered,
+path.link.entered.hover {
+  color: white !important;
+  stroke: #008800;
+}
+
+path.link.pruned {
+  stroke-dasharray: 10,10;
+  stroke: #880000;
+}
+
+path.link.pruned.hover {
+  color: white !important;
+  stroke: #cd0000;
+}
+
+path.mouselink {
+  stroke-width: 30px;
+  stroke: #000;
+  stroke-opacity: 0;
+  cursor: pointer;
+}
+
+
+g.node path {
+  cursor: pointer;
+  fill: #FFF;
+  stroke: #000;
+}
+
+g.node.leaf path {
+  fill: #FFF;
+}
+g.node.entered.leaf path {
+  fill: #EEEEFF;
+}
+
+rect.cursor {
+  fill: #000;
+}
+
+text {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+text.value {
+  text-anchor: middle;
+  font-weight: bold;
+}
+
+g.node.pruned .alpha,
+g.node.pruned .beta {
+  fill: #AA0000;
+}
+
+.minimax path.link.pruned {
+  stroke-dasharray: none;
+  stroke: #000;
+}
+
+.minimax g.node.pruned .alpha,
+.minimax g.node.pruned .beta {
+  fill: #000;
+}
+
+.minmax-label {
+  font-size: 24px;
+  font-weight: bold;
+  text-anchor: start;
+}
+
+.active-option {
+  background-color: #4ba8e2;
+}
+
+.inactive-option {
+  cursor: pointer;
+  color: black !important;
+  transition: all 750ms ease;
+}
+
+.inactive-option:hover {
+  cursor: pointer;
+  background-color: #3a7ca5;
+}

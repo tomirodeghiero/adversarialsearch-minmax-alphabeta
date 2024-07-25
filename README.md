@@ -1,6 +1,6 @@
 # Min Max and Alpha Beta Pruning Algorithms
 
-This repository contains the implementation of the Min Max and Min Max Alpha Beta algorithms, designed specifically for academic purposes at the Universidad Nacional de Río Cuarto (UNRC). These implementations are part of the coursework for the subjects "Diseño de Algoritmos" (Código 3326) and "Algortimos II" (Código 3302).
+This repository contains the implementation of the Min Max and Min Max Alpha Beta algorithms, designed specifically for academic purposes at the Universidad Nacional de Río Cuarto (UNRC). These implementations are part of the coursework for the subjects "Diseño de Algoritmos" (3326) and "Algortimos II" (3302).
 
 ## Creator
 
@@ -30,4 +30,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - Thanks to the faculty and staff at UNRC for their guidance and support in the learning of these algorithms.
-# adversarialsearch-minmax-alphabeta
